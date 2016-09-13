@@ -18,7 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [PLPlayerEnv initEnv];
     return YES;
 }
