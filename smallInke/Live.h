@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Creator.h"
 
-@interface Live : NSObject
+@interface Live : NSObject<NSCopying>
 
 @property (nonatomic, strong) NSString * city;
 @property (nonatomic, strong) Creator * creator;

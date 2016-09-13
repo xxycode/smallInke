@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Creator : NSObject
+@interface Creator : NSObject<NSCopying>
 
 @property (nonatomic, assign) NSInteger idField;
 @property (nonatomic, assign) NSInteger level;
@@ -18,7 +18,5 @@
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)toDictionary;
-
-- (instancetype)copyWithZone:(NSZone *)zone;
 
 @end
